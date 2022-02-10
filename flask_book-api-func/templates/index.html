@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>API List | Dushanbe</title>
+
+    <!--Web TAB icon-->
+	<link rel="shortcut icon" type="image/png" href="logo16x16.png">
+	<!--Web TAB icon-->
+</head>
+
+<body>
+    <!---- DRF API Root ---->
+    <h1 style="text-align: center; color: orangered">Book APIs</h1>
+    <a href="" target="_blank"><center>click to view Flask API Root</center></a>
+    <br>
+    <hr>
+
+
+    <!---- Index of Book List ---->
+    <h2>Index of Book List</h2>
+    <hr>
+
+        <!---- Name of Book ---->
+        <li><b>Book</b></li>
+        <br>
+        <hr>
+
+        <p>1. Book Create <b style="color:green;">(POST)</b>: <a href="#">http://127.0.0.1:5000/book</a></p>
+            <pre>
+                Api Body:
+                        {
+                            "name":"Django for Beginners"
+                        }
+            </pre>
+        <hr>
+
+        <p>2. Book List <b style="color:blue;">(GET)</b>:
+            <a href="http://127.0.0.1:5000/book"
+               target="_blank">http://127.0.0.1:5000/book</a>
+        </p>
+        <hr>
+
+
+        <!---- Details ---->
+        <li><b>Details</b></li>
+        <br>
+        <hr>
+
+        <p>3. Details of Book <b style="color:green;">(POST)</b>: <a href="#">http://127.0.0.1:5000/book/Things We Never Got Over/detail</a></p>
+            <pre>
+                Api Body:
+                        {
+                            "author": "William S. Vincent",                      <span style="background-color: yellow">(relational field with 'Book' table)</span>
+                            "price": 39.00
+                        }
+            </pre>
+        <hr>
+
+        <p>4. Detail of Book List <b style="color:blue;">(GET)</b>:
+            <a href="http://127.0.0.1:5000/book/Things We Never Got Over/detail"
+               target="_blank">http://127.0.0.1:5000/book/Things We Never Got Over/detail</a>
+        </p>
+        <hr>
+
+</body>
+
+</html>
